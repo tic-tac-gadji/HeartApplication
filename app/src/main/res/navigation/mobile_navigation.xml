@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+
+    <fragment
+        android:id="@+id/nav_details_makes"
+        android:name="codein.hackaton.heart.ui.home.MakesDetails"
+        android:label="Каталог"
+        tools:layout="@layout/fragment_details_makes">
+        <action
+        android:id="@+id/action_nav_details_makes_to_navigation_home"
+        app:destination="@id/navigation_home">
+
+        </action>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="codein.hackaton.heart.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_nav_details_makes"
+            app:destination="@id/nav_details_makes" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="codein.hackaton.heart.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="codein.hackaton.heart.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_basket"
+        android:name="codein.hackaton.heart.ui.basket.BasketFragment"
+        android:label="Корзина"
+        tools:layout="@layout/fragment_basket">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="codein.hackaton.heart.ui.about.AboutFragment"
+        android:label="Главная"
+        tools:layout="@layout/fragment_about">
+
+    </fragment>
+
+</navigation>

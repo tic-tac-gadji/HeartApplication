@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:elevation="1dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="4dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="4dp">
+
+
+    <ImageView
+        android:id="@+id/makesImage"
+        android:layout_width="match_parent"
+        android:layout_height="227dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="12dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/common_google_signin_btn_icon_disabled" />
+
+    <TextView
+        android:id="@+id/makesTitle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textAlignment="viewStart"
+        android:textColor="#0E0E0E"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:text="Name wear" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/descriptionMakes"
+        android:text="Описание">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/make_price"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="99 p"
+            android:textAlignment="center"
+            android:textColor="#151515"
+            android:textSize="14sp" />
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/buttonBuy"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:layout_marginStart="14dp"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:onClick="openBrowser"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:tag="1"-->
+<!--            app:srcCompat="@drawable/ic_launcher_background" />-->
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
